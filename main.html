@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+body {
+  background-image: url('tumblr_oiwytfBokc1tf8vylo1_1280.png');
+  background-size: 100% 100%;
+  background-attachment: fixed;
+  text-align: center;
+  margin-top: 200px;
+}
+.grid-container {
+  display: inline-grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 2px;
+}
+.grid-item {
+  font-size: 10px;
+  text-align: center;
+}
+.window {
+  grid-column: 1 / span 4;
+  height: 100px;
+  border: 2px groove #e5bdd0;
+  font-size: 20px;
+  text-align: right;
+  padding: 10px;
+}
+.plus {
+  grid-area: 3 / 4 / 5 / 4;
+  grid column: 4 / 4;
+  font-size: 10px;
+  text-align: center;
+}
+.equal {
+  grid-area: 5 / 4 / 7 / 4;
+  font-size: 10px;
+  text-align: center;
+}
+.zero {
+  grid-column: 1 / span 3;
+  font-size: 10px;
+  text-align: center;
+}
+.button {
+  background-color: #e5bdd0;
+  border: none;
+  color: white;
+  width: 70px;
+  height: 70px;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+}
+.button_1 {
+  background-color: #e5bdd0;
+  border: none;
+  color: white;
+  width: 70px;
+  height: 142px;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+}
+.button_2 {
+  background-color: #e5bdd0;
+  border: none;
+  color: white;
+  width: 214px;
+  height: 70px;
+  text-align: center;
+  font-size: 16px;
+  opacity: 0.6;
+  transition: 0.3s;
+  display: inline-block;
+  text-decoration: none;
+}
+.button:hover {opacity: 1}
+.button_1:hover {opacity: 1}
+.button_2:hover {opacity: 1}
+
+</style>
+</head>
+<body>
+<div class="grid-container">
+    <div class="window" id="win"> dcgfj </div>
+    <div class="grid-item">
+        <button class="button">C</button>
+    </div>
+    <div class="grid-item">
+        <button class="button">/</button>
+    </div>
+    <div class="grid-item">
+        <button class="button">*</button>
+    </div>
+    <div class="grid-item">
+        <button class="button">-</button>
+    </div>
+    <div class="grid-item">
+        <button class="button" onclick="tap(1)">1</button>
+    </div>
+    <div class="grid-item">
+        <button class="button" onclick="tap(2)">2</button>
+    </div>
+    <div class="grid-item">
+        <button class="button" onclick="tap(3)">3</button>
+    </div>
+    <div class="plus">
+        <button class="button_1">+</button>
+    </div>
+    <div class="grid-item">
+        <button class="button" onclick="tap(4)">4</button>
+    </div>
+    <div class="grid-item">
+        <button class="button" onclick="tap(5)">5</button>
+    </div>
+    <div class="grid-item">
+        <button class="button" onclick="tap(6)">6</button>
+    </div>
+    <div class="equal">
+        <button class="button_1">=</button>
+    </div>
+    <div class="grid-item">
+        <button class="button" onclick="tap(7)">7</button>
+    </div>
+    <div class="grid-item">
+        <button class="button" onclick="tap(8)">8</button>
+    </div>
+    <div class="grid-item">
+        <button class="button" onclick="tap(9)">9</button>
+    </div>
+    <div class="zero">
+        <button class="button_2" onclick="tap(0)">0</button>
+    </div>
+
+
+</div>
+
+<script src="script.js"></script>
+
+</body>
+
+</html>
