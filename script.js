@@ -8,18 +8,8 @@ function clr() {
     document.getElementById("score").innerHTML = ' ';
 }
 
-function a() {
-    var val = document.getElementById("win").innerHTML
-    document.getElementById("hist").innerHTML = val + " + ";
-    document.getElementById("win").innerHTML = ' ';
-}
-
-function s() {
-    document.getElementById("his").innerHTML = document.getElementById("win").innerHTML + " - ";
-    document.getElementById("win").innerHTML = ' ';
-}
-
-function d() {
-    document.getElementById("his").innerHTML = val + " / ";
-    document.getElementById("win").innerHTML = ' ';
+function operation(sym) {
+    var val = document.getElementById("win").innerHTML;
+    document.getElementById("hist").innerHTML = val + sym;
+    document.getElementById("win").innerHTML = '';
 }

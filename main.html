@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
-<head>
+  <head>
+    <title>Calculator</title>
 <style>
 body {
   background-image: url('tumblr_oiwytfBokc1tf8vylo1_1280.png');
@@ -24,10 +25,10 @@ body {
   text-align: right;
   padding: 10px;
 }
-td {
+/*td {
   border: 1px solid black;
   padding: 1px;
-}
+}*/
 .plus {
   grid-area: 3 / 4 / 5 / 4;
   grid-column: 4 / 4;
@@ -114,13 +115,13 @@ td {
         <button class="button" onclick="clr()">C</button>
     </div>
     <div>
-        <button class="button" onclick="d()">/</button>
+        <button class="button" onclick="operation(' / ')">/</button>
     </div>
     <div>
-        <button class="button">*</button>
+        <button class="button" onclick="operation(' * ')">*</button>
     </div>
     <div>
-        <button class="button" onclick="s()">-</button>
+        <button class="button" onclick="operation(' - ')">-</button>
     </div>
     <div>
         <button class="button" onclick="tap(1)">1</button>
@@ -132,7 +133,7 @@ td {
         <button class="button" onclick="tap(3)">3</button>
     </div>
     <div class="plus">
-        <button class="button_1" onclick="a()">+</button>
+        <button class="button_1" onclick="operation(' + ')">+</button>
     </div>
     <div>
         <button class="button" onclick="tap(4)">4</button>
